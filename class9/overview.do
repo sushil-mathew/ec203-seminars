@@ -105,6 +105,25 @@ title("wages{subscript:i} = {&alpha} + {&beta}{subscript:1}*Hours{subscript:1{su
 *3. holding everything constant, higher educated people earn an extra $2 for every hour compared to low education people, on average.
 
 * I can run two different regressions, one for high educ and one for low educ: it's the same as above. Their intercept is different and so are the slopes.
+twoway (scatter wages hours if D == 1, mcolor(blue%20)) ///
+(scatter wages hours if D == 0, mcolor(red%20)) ///
+(lfit wages hours if D == 1, lcolor(black)) ///
+(lfit wages hours if D == 0, lcolor(black)) ///
+(function y = 200 + 2*x, lpattern(dash) lcolor(red%50) range(hours)), ///
+yscale(range(0 400) extend) ylabel(#5) name(dumint_withreg1, replace) ///
+legend(order(1 2) label(1 "High education") label(2 "Low education")) ///
+ytitle("Wage (in $)") ///
+title("High educ: wages{subscript:i} = {&alpha} + {&beta}{subscript:1}*Hours{subscript:1{subscript:i}} + {&beta}{subscript:2}*1 + {&beta}{subscript:3}*1*Hours + {&epsilon}{subscript:i}""Low educ: wages{subscript:i} = {&alpha} + {&beta}{subscript:1}*Hours{subscript:1{subscript:i}} + {&beta}{subscript:2}*0 + {&beta}{subscript:3}*0*Hours + {&epsilon}{subscript:i}", size(small))
+
+twoway (scatter wages hours if D == 1, mcolor(blue%20)) ///
+(scatter wages hours if D == 0, mcolor(red%20)) ///
+(lfit wages hours if D == 1, lcolor(black)) ///
+(lfit wages hours if D == 0, lcolor(black)) ///
+(function y = 200 + 2*x, lpattern(dash) lcolor(red%50) range(hours)), ///
+yscale(range(0 400) extend) ylabel(#5) name(dumint_withreg2, replace) ///
+legend(order(1 2) label(1 "High education") label(2 "Low education")) ///
+ytitle("Wage (in $)") ///
+title("Two regressions" "Only for high education sample: wages{subscript:i} = {&alpha} + {&beta}{subscript:1}*Hours{subscript:1{subscript:i}} + {&epsilon}{subscript:i}""Only for low education sample: wages{subscript:i} = {&alpha} + {&beta}{subscript:1}*Hours{subscript:1{subscript:i}} + {&epsilon}{subscript:i}", size(small))
 
 *called linear regression because linear in parameters (beta ^ 1)
 
