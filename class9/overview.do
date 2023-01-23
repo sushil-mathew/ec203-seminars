@@ -32,7 +32,7 @@ twoway (scatter wages hours if D == 1, mcolor(blue%20)) ///
 yscale(range(0 400) extend) ylabel(#5) name(dummod_withreg, replace) ///
 legend(order(1 2) label(1 "High education") label(2 "Low education")) ///
 ytitle("Wage (in $)") ///
-title("wages{subscript:i} = {&alpha} + {&beta}{subscript:1}*Hours_YouTube{subscript:1{subscript:i}} + {&beta}{subscript:2}*High_Educ + {&epsilon}{subscript:i}", size(medium))
+title("wages{subscript:i} = {&alpha} + {&beta}{subscript:1}*Hours{subscript:1{subscript:i}} + {&beta}{subscript:2}*Educ + {&epsilon}{subscript:i}", size(medium))
 
 
 *two things are true:
@@ -112,6 +112,30 @@ title("wages{subscript:i} = {&alpha} + {&beta}{subscript:1}*Hours{subscript:1{su
 
 *what happens if you forget to add the dummy?
 *case 1: non-significant difference
+clear
+
+
+set obs 1000
+
+gen hours = 100*runiform() //generating some random x variable that's uniformly distributed between 0,100
+gen D = 1 in 1/500 
+replace D = 0 if D == .
+gen wages = 100+ 2*hours + D*100 + 3*D*hours + rnormal(0,10)
+label define D 1 "High education" 0 "Low education"
+label values D D
+lab var wages "Wage (in $)"
+lab var hours "Hours spent on YouTube"
+
+
+*in plain english, what's your analysis of this data? Show dummod on the side
+twoway (scatter wages hours if D == 1, mcolor(blue%20)) ///
+(scatter wages hours if D == 0, mcolor(red%20)) ///
+(lfit wages hours) ///
+(function y = 200 + 2*x, lpattern(dash) lcolor(red%50) range(hours)), ///
+yscale(range(0 400) extend) ylabel(#5) name(dum_forgot, replace) ///
+legend(order(1 2) label(1 "High education") label(2 "Low education")) ///
+ytitle("Wage (in $)")
+
 
 *case 2: significant difference
 
