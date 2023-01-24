@@ -1,6 +1,6 @@
 # EC203 Seminars (2022-23) Term 2 Overview material
 
-Hi! These are some notes to complement your understanding of the EC203 seminar problem sets. 
+Hi! These are some notes to complement your understanding of the EC203 seminar problem sets. If your code doesn't run, don't panic. Part of learning data science/econometrics/coding is to learn to deal with the pain of seeing an error and telling yourself that it's ok. If you have any issues, let's meet during office hours or online.
 
 ## How do I download this?
 
