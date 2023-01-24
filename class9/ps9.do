@@ -121,6 +121,7 @@ This is called a loop. Loops are a very useful coding tool. Without a loop you w
 	The RSS can be a useful metric to test whether the "restrictions" you're adding is/are useful or not.
 	*If the restriction is meaningful, then the RSS (or the variation of the residual term) will decrease drastically, compared to the RSS of the unrestricted model.
 	*An F-test does exactly this. It gives an answer to whether the variance of one "object" (in this example, an unrestricted model), is meaningfully different from the variance of another "object" (a restricted model, in this example). This kind of F-Test where you compare a restricted/unrestricted model is called a Chow test, or a test for structural breaks. That is, it asks whether there is something fundamentally (or to use jargon: "structurally") different between the unrestricted and restricted models
+	*Note that the Chow test is the last step of the process of building a model. The first step is to reason if your model, if it even makes sense. In the ice cream example above, I didn't need to run a Chow test, to know whether I need to add a rich/poor dummy. If your model fails a logic test (which often requires a lot of thought, and reasoning), then it doesn't matter whether it passes the Chow test or not. This is generally true for any hypothesis test.
 */
   reg lwage school exper exper2 male //  RSS=480.73
   
