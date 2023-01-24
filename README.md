@@ -23,14 +23,12 @@ Answers to Frequently Asked Questions below.
 2. If you see a line somewhere on the top that looks something like `cd "C:/......"`, replace `C:/.....` with the folder location where you've stored these files.
     ### How do I do that?
 
-    1. Suppose you stored your EC203 folder in the "Downloads" folder of your computer. I'm going to assume that you named your folder "EC203 problem sets". 
-    2. Double click on Downloads. 
-    3. Double click on "EC203 problem sets". 
-    4. You will see one folder for each problem set starting with the folder "class9". Double click on the problem set that you're trying to run the do-file for. I'm going to assume you're doing this for problem set 9. (Therefore, double click the "class9" folder.)
-    5. Right click on some blank space on your screen.
+    1. Suppose you stored your EC203 folder in the "Downloads" folder of your computer. I'm going to assume that you named your folder "EC203 problem sets". Double click on Downloads. Double click on "EC203 problem sets". 
+    2. You will see one folder for each problem set starting with the folder "class9". Double click on the problem set that you're trying to run the do-file for. I'm going to assume you're doing this for problem set 9. (Therefore, double click the "class9" folder.)
+    3. Right click on some blank space on your screen.
         + Windows users: Click on "Properties". You will see a line that says something like `Location: C:/....` (for you it might be `D:/....`, or `H:/.....` etc. - don't worry.). Select the whole thing starting from `C:/....`. Right-click, and copy.
         + Mac users: Click on "Get info". You will see a line that says something like `Where: Macintosh HD > ....`. Select the whole thing starting from `Macintosh HD > ....`. Right-click, and copy.
-    6. Go to your Stata do-file. Inside the `cd " "` command, replace everything that comes inside " " with whatever you just copied. Note: remove the space in the " ".
+    4. Go to your Stata do-file. Inside the `cd " "` command, replace everything that comes inside " " with whatever you just copied. Note: remove the space in the " ".
 
 3. If your do-file is supposed to use a dataset (Generally, the first and/or second questions of the problem set should tell you whether you use a dataset or not.), see if there is a command called `use <name_of_the_dataset>, clear`. If it's not there, add it.
 4. Click "do" on the top of your do-file (it looks like a play button). You should select "entire do-file", if you see an option like that.
