@@ -12,7 +12,7 @@ Follow the steps below:
 3. Click "Download ZIP". 
 4. Download it wherever you have to on your laptop. 
 
-NOTE for Windows 10 users: You'll have to do an extra step, where you right click on the file, and then click "Extract All". Mac users don't need to do anything. 
+NOTE for Windows 10 users: You'll have to do an extra step after downloading, where you right click on the file, and then click "Extract All". Mac users don't need to do anything. 
 If you're asked by your computer, whether to replace this file, choose "Yes".
 Answers to Frequently Asked Questions below.
 
