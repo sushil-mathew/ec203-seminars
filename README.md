@@ -37,4 +37,4 @@ Answers to Frequently Asked Questions below.
 
 
 ## What if I encounter a problem or if I have a query, or if I think you've done something wrong?
-Email me as soon as possible at [sushil.mathew.1@warwick.ac.uk](mailto:sushil.mathew.1@warwick.ac.uk), with as much detail as possible (screenshots, your do-files, outputs etc.) - no need to send the data files. Or if you're feeling adventurous and you want to learn how to use GitHub, open an "Issue" for this repo. On this page (I'll let you figure that one out).
+Email me as soon as possible at [sushil.mathew.1@warwick.ac.uk](mailto:sushil.mathew.1@warwick.ac.uk), with as much detail as possible (screenshots, your do-files, outputs etc.) - no need to send the data files. Or if you're feeling adventurous and you want to learn how to use GitHub (which is a useful skill in many jobs), open an "Issue" for this repo (I'll let you figure this out).
