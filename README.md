@@ -3,7 +3,8 @@
 Hi! These are some notes to complement your understanding of the EC203 seminar problem sets. 
 
 <details>
-<summary>## How do I download this? </summary>
+<summary><b>How do I download this? </b></summary>
+
 
     1. Click on the Green "<> Code" button on the top of this page. 
     2. Click on "Local". 
@@ -11,15 +12,18 @@ Hi! These are some notes to complement your understanding of the EC203 seminar p
     4. Download it wherever you have to on your laptop. 
 NOTE for Windows 10 users: You'll have to do an extra step, where you right click on the file, and then click "Extract All". Mac users don't need to do anything. 
 If you're asked by your computer, whether to replace this file, choose "Yes".
+
+
 </details>
 
 <details>
-<summary>## How do I run a Stata do-file? </summary>
+<summary><b> How do I run a Stata do-file? </b> </summary>
 
     1. Double click on the Stata do-file.
     2. If you see a line somewhere on the top that looks something like cd "C:/......", replace "C:/....." with the folder location where you've stored these files.
     <details>
-    <summary> ### How do I do that? </summary>
+    <summary> <b> How do I do that? </b></summary>
+
         1. Suppose you stored your EC203 folder in the "Downloads" folder of your computer. I'm going to assume that you named your folder "EC203 problem sets". 
         2. Double click on Downloads. 
         3. Double click on "EC203 problem sets". 
@@ -31,10 +35,11 @@ If you're asked by your computer, whether to replace this file, choose "Yes".
         </details>
     3. If your do-file is supposed to use a dataset (Usually, the first and second questions of the problem set should tell you whether you use a dataset or not.), see if there is a command called use <name_of_the_dataset>, clear. If it's not there, add it.
     4. Click "do" on the top of your do-file. You should select "entire do-file", if you see an option like that.
+    </details>
 </details>
 
 
 <details> 
-<summary> ## What if I encounter a problem or if I have a query? </summary>
+<summary> <b> What if I encounter a problem or if I have a query? </b> </summary>
 Email me as soon as possible at [sushil.mathew.1@warwick.ac.uk](sushil.mathew.1@warwick.ac.uk), with as much detail as possible (screenshots, your do-files, outputs etc.) - no need to send the data files.
 </details>
