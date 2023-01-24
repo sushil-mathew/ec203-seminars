@@ -18,7 +18,7 @@ If you're asked by your computer, whether to replace this file, choose "Yes".
 ## How do I run a Stata do-file?
 
 1. Double click on the Stata do-file.
-2. If you see a line somewhere on the top that looks something like cd "C:/......", replace "C:/....." with the folder location where you've stored these files.
+2. If you see a line somewhere on the top that looks something like `cd "C:/......", replace` "C:/....." with the folder location where you've stored these files.
     ### How do I do that?
 
     1. Suppose you stored your EC203 folder in the "Downloads" folder of your computer. I'm going to assume that you named your folder "EC203 problem sets". 
@@ -30,7 +30,7 @@ If you're asked by your computer, whether to replace this file, choose "Yes".
         + Mac users: Click on "Get info". You will see a line that says something like "Where: Macintosh HD > ....". Select the whole thing starting from "Macintosh HD > ....". Right-click, and copy.
     6. Go to your Stata do-file. Inside the cd "" command, replace everything that comes inside " " with whatever you just copied.
 
-3. If your do-file is supposed to use a dataset (Usually, the first and second questions of the problem set should tell you whether you use a dataset or not.), see if there is a command called use <name_of_the_dataset>, clear. If it's not there, add it.
+3. If your do-file is supposed to use a dataset (Usually, the first and second questions of the problem set should tell you whether you use a dataset or not.), see if there is a command called `use <name_of_the_dataset>, clear`. If it's not there, add it.
 4. Click "do" on the top of your do-file. You should select "entire do-file", if you see an option like that.
 
 
