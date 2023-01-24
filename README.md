@@ -20,7 +20,7 @@ Answers to Frequently Asked Questions below.
 ## How do I run a Stata do-file?
 
 1. Double click on the Stata do-file.
-2. If you see a line somewhere on the top that looks something like `cd "C:/......",` replace `C:/.....` with the folder location where you've stored these files.
+2. If you see a line somewhere on the top that looks something like `cd "C:/......"`, replace `C:/.....` with the folder location where you've stored these files.
     ### How do I do that?
 
     1. Suppose you stored your EC203 folder in the "Downloads" folder of your computer. I'm going to assume that you named your folder "EC203 problem sets". 
