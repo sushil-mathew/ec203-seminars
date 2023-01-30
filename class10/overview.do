@@ -1,3 +1,5 @@
+*this file doesn't have much comments compared to last time. That's because the things I'm doing are very similar to the last time. And the overview.do file from the ps9 folder has more detailed information.
+*if you run into errors, please email me on sushil.mathew.1@warwick.ac.uk
 
 clear all 
 
@@ -30,7 +32,8 @@ replace weight = weight*3.9 if weight < 1000 //The way stata draws the size of t
 replace weight = weight*3 if weight > 1000
 replace weight = weight*3 if weight > 3000
 
-*make a scatter plot
+*make a scatter plot. aw stands for analytic weights. Stata has different kind of weights. These are difficult to explain at this stage, but you'll learn what it is, as you gain experience working with different kinds of data.
+*The way I've constructed this graph is very similar to what I had done last week in the ps9/overview.do file, and I've written more detailed comments there.
 scatter y D [aw=weight], mcolor(%20) ///
 ylabel(-0.25 " " 0 1 1.25 " ") xlabel(-0.25 " " 0 1 1.25 " ") yscale(extend) ///
 ytitle("A dummy variable", size(medium)) xtitle("Another dummy variable", size(medium)) ///
@@ -90,7 +93,6 @@ title("Regression: y{subscript:i} = {&alpha} + {&beta}{subscript:1}*x{subscript:
 yscale(range(`minyhat' `maxyhat') extend) xscale() ///
 name(lpm, replace)
 
-*what's the least and highest predicted value of y in lpm?
 
 clear
 set obs 100
@@ -106,22 +108,22 @@ legend(off)
 *https://twitter.com/i/status/1590366298114265089
 /*
 in this GIF, imagine the grey dots to be the population data (so for ex: the data on all cars in the UK)
-imagine the red dots to be a random sample of cars that you pick for your study (it's too expensive and impractical to collect data on all the cars in the UK). The red dots are changing to reflect the "randomness" of picking a sample. If you picked a sample on Jan 30, 2023 you'd pick the first set of red dots in the animation. If you picked a sample at a different time on the same day, you'd pick a completely different sample. In practice, people tend to draw only one sample. But still we want to make sure that the slope we get from the regression remains stable to different "configurations" of the data.
+imagine the red dots to be a random sample of cars that you pick for your study (it's too expensive and impractical to collect data on all the cars in the UK). The red dots are changing to reflect the "randomness" of picking a sample. If you picked a sample on Jan 30, 2023 you'd pick the first set of red dots in the animation. If you picked a sample at a different time on the same day, you'd pick a completely different sample. In practice, people tend to draw only one sample. But still, in theory, we want to make sure that the slope we get from the regression remains stable to different "picks" of the data.
 
 The distance between the grey dots and the line (showing the relationship between x and y) is called the "error"
 The distance between the red dots and the line corresponding to each each of red dots is called the "residual".
 It's very important to know the distinction between both these terms, even though the idea behind them are very similar. Error is for the population, residual is for the sample.
 you see 4 panels here: Left-Top, Left-Bottom, Right-top, Right-bottom
 Focus only on Left-Top and bottom first: you will notice 2 things
-	(a) In the population data, as x increases, the variance in the error term increases.
+	(a) In the population data, as x increases, the variance in the error term changes.
 	(b) In the left-bottom panel, each time you draw a sample of cars, the slope of the x-y relationship is more or less the same on average, for all practical purposes.
 Now focus on the Right-top and bottom:
 	(a) In the population data, as x increases, the variance in the error term increases. As a consequence, the variance in the residual also increases.
 	(b) In the right bottom panel: each time you draw a sample of cars, the slope of the x-y relationship:
 		(i) doesn't necessarily reflect the "true" slope
-		(ii) but if you average all the slopes, you get the true slope. But still, the fact that the slope itself could be wildly negative, and wildly positive, induces so much uncertainty. We end up having large variation in the slope itself. We don't want this. If we pick a random sample, we would want this estimated value of the slope to be quite close to the true slope.
+		(ii) but if you average all the slopes, you get the true slope. But still, the fact that the slope itself could be wildly negative, and wildly positive, induces so much uncertainty. We end up having large variation in the slope itself. We don't want this. If we pick a random sample, we would want this estimated value of the slope to be quite close to the true slope. So how do we solve this problem? See answer below.
 		
 */
 *heteroskedasticity: solution -
-* account for these different variances of the error term (the error can be approximated with the residual). That is, tell the computer to expect that there will be different variances in the error term for each value of x, and account for it in the way it calculates the slope. The exact mechanism of how it's accounted for is quite theoretical - you've seen a preview in your lectures, but if you're really interested we can discuss this during office hours.
+* account for these different variances of the error term (the error can be approximated with the residual). That is, tell the computer to expect that there will be different variances in the error term for each value of x, and account for it in the way it calculates the slope. The exact mechanism of how it's accounted for has some heavy theory behind it - you've seen a preview in your lectures, but if you're really interested we can discuss this during office hours.
 *How do you tell the computer to expect different variances? The answer to this is in your problem set where you're asked to find the heteroskedasticity-robust standard errors. 

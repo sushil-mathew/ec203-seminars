@@ -39,6 +39,7 @@
   ttest wage, by(male)
   
   *wage is the y variable, male is the x variable. Look out for the t-statistic (some people call this the "t-ratio") in the regression output. Compare this with what you got previously.
+  *reg stands for "regress"
   reg wage male
   
   reg lwage male 
