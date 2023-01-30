@@ -1,6 +1,21 @@
 
 clear all 
 
+
+********************
+*SETUP
+********************
+*This part installs additional packages that are written by users to enhance the functioning of Stata.
+*Here I'm going to run some packages to make the graphs look nice (the default stata graphs are pretty ugly IMO)
+*If you need to run this section (it's not compulsory), remove the "/* at the top of this code block and the "*/" at the bottom of the code block.
+ssc install color_style, replace
+net install palettes , replace from("https://raw.githubusercontent.com/benjann/palettes/master/")
+net install colrspace, replace from("https://raw.githubusercontent.com/benjann/colrspace/master/")
+ssc install grstyle, replace
+
+set scheme white, permanently //this will change the stata graph background from the dull blue to white permanently - that is, until you type this command again to change it to something else
+
+
 set obs 10000 
 gen D = 1 in 1/5000
 replace D = 0 in 5001/10000
