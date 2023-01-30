@@ -1,7 +1,7 @@
 
 clear all 
 
-
+/*
 ********************
 *SETUP
 ********************
@@ -14,7 +14,7 @@ net install colrspace, replace from("https://raw.githubusercontent.com/benjann/c
 ssc install grstyle, replace
 
 set scheme white, permanently //this will change the stata graph background from the dull blue to white permanently - that is, until you type this command again to change it to something else
-
+*/
 
 set obs 10000 
 gen D = 1 in 1/5000
