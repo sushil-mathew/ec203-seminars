@@ -1,14 +1,16 @@
 *if you click "DO" or "Execute(DO)" on the top of this screen, your file should run without errors. 
 *if it does have errors, try to read the error on the screen, maybe google this error, and try to fix it yourself.
 *if you spend 10 mins and it still doesn't work, email me on sushil.mathew.1@warwick.ac.uk
-*if you have any other questions about the do-file or your material: also email me or see me during office hours.
+*if you have any other questions about the do-file or your material: also email me or let's meet during office hours.
 
   cd "C:\Users\u1972955\Dropbox\TA\EC203\Term 2\ec203-seminars\class10"
   use crime2, clear
   des
+  capture log using ps10, replace text
 
   *this runs the regression narr86 = alpha + beta1*ptime86 + beta2*qemp86 + ..... + error
   *you'll get a bunch of output, and not all of them are necessary. The only things you need to focus on are the "Coefficient" and P > |t| columns. 
+  *For a continuous x variable, increasing x by 1 unit (replace x with the variable name and "unit" with the actual unit of measurement of x), would increase(if coefficient is positive) or decrease (if coefficient is negative) y (replace with actual y variable) by <coefficient> (replace with actual coefficient) units (replace with actual unit of measurement of y), on average, holding all else constant. For a dummy x variable, the coefficient gives the average difference in y for group x=1 (for ex: hispanic people) compared to group x=0 (non-hispanic people), on average, holding all else constant.
   reg narr86 ptime86 qemp86 pcnv avgsen black hispan
 
   *drop arr is telling stata to drop a variable called "arr" if it exists. If it doesn't exist Stata throws up an error saying this.
