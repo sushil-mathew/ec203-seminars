@@ -110,11 +110,11 @@ This is called a loop. Loops are a very useful coding tool. Without a loop you w
   }
   
   *RSS stands for residual sum of squares. It's one way to measure the variation of the residual terms. 
-  *Jargon alert: The first regression below is called an "unrestricted" model compared to the next regression model that comes after this. 
-  *Jargon explanation: In the second model, you're constraining lwage in some way by saying that lwage has to depend on 7 terms. This is opposed to the first model, where it depends only on 4 terms.
-  /*It might be counterintuitive to think about why adding each term would be called a "restriction", when actually it might explain the wage variable better? Each time you add a variable, you're restricting wage to fit that particular linear regression model. However, if you remove all variables, then wage lives on its own, on the x axis, and the probability distribution will be on the y axis. This unintuitive terminology is just unfortunately something that we have to live with because of statisticians.
+  *Jargon alert: The first regression below is called a "restricted" model compared to the next regression model that comes after this. 
+  *Jargon explanation: In the first model, you're constraining lwage in some way by saying that lwage has to depend on only 4 terms. This is opposed to the second model, where it depends on 7 terms.
+  /*It might be confusing to think about why removing a term would be called a "restriction"? Each time you remove a variable, you're restricting wage to not depend on other factors. This unintuitive terminology is just unfortunately something that we have to live with because of statisticians.
 	
-	The RSS can be a useful metric to test whether the "restrictions" (or variables in this case) that you're adding is/are useful or not.
+	The RSS can be a useful metric to test whether the "restrictions" (or imposing some coefficient = 0 in this case) that you're adding is/are useful or not.
 	*If the restriction is meaningful, then the RSS (or the variation of the residual term) will decrease drastically, compared to the RSS of the unrestricted model.
 	*An F-test does exactly this. It gives an answer to whether the variance of one "object" (in this example, an unrestricted model), is meaningfully different from the variance of another "object" (a restricted model, in this example). This kind of F-Test where you compare a restricted/unrestricted model is called a Chow test, or a test for structural breaks. That is, it asks whether there is something fundamentally (or to use jargon: "structurally") different between the unrestricted and restricted models
 	*Note that the Chow test is the last step of the process of building a model. The first step is to reason if your model even makes sense. If your model fails a logic test (which often requires a lot of thought, and reasoning), then it doesn't matter whether it passes the Chow test or not. This is generally true for any hypothesis test.
