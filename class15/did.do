@@ -1,5 +1,5 @@
 ********************************************************************************
-* Get into groups and work together
+* Get into groups and help each other
 * One person in the group keep track of time: If you take more than 5 minutes for a task, give me a shout
 * Most of the commands you'll need to use today are available on the do-file from the previous problem set (also on GitHub)
 * If you haven't used a command before I have written it down 
