@@ -1,0 +1,425 @@
+---------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:\Users\u1972955\Dropbox\TA\EC203\Term 2\ec203-seminars\class15\ps15.log
+  log type:  text
+ opened on:   4 Mar 2023, 12:02:03
+
+. 
+. *does the data make sense? (any abnormal values? missing values? do the averages look alright?)
+. summarize, detail
+
+                 Unique household identifier
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%          203             13
+ 5%          953             21
+10%         1688             22       Obs               4,013
+25%         3922             25       Sum of wgt.       4,013
+
+50%         7970                      Mean           8017.324
+                        Largest       Std. dev.       4589.69
+75%        12100          15774
+90%        14431          15775       Variance       2.11e+07
+95%        15050          15778       Skewness      -.0063813
+99%        15661          15778       Kurtosis       1.767325
+
+                     Locality identifier
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%            3              1
+ 5%            5              2
+10%           10              2       Obs               4,013
+25%           30              2       Sum of wgt.       4,013
+
+50%           57                      Mean           73.25667
+                        Largest       Std. dev.      55.05558
+75%          111            200
+90%          160            200       Variance       3031.117
+95%          177            200       Skewness       .6386965
+99%          196            200       Kurtosis        2.23852
+
+                      income per capita
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%        10000          10000
+ 5%     10327.27          10000
+10%     10757.67          10000       Obs               4,013
+25%     11350.54          10000       Sum of wgt.       4,013
+
+50%     11839.33                      Mean           11911.82
+                        Largest       Std. dev.      1012.857
+75%     12370.91       18797.21
+90%      13017.3       19824.14       Variance        1025880
+95%     13523.86       20033.35       Skewness        1.51689
+99%     15346.65        21403.5       Kurtosis        10.4954
+
+          household in treated village=1, =0 if not
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%            0              0
+ 5%            0              0
+10%            0              0       Obs               4,013
+25%            0              0       Sum of wgt.       4,013
+
+50%            0                      Mean           .4856716
+                        Largest       Std. dev.      .4998569
+75%            1              1
+90%            1              1       Variance        .249857
+95%            1              1       Skewness       .0573373
+99%            1              1       Kurtosis       1.003288
+
+                     =1 in 2018, =0 2015
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%            0              0
+ 5%            0              0
+10%            0              0       Obs               4,013
+25%            0              0       Sum of wgt.       4,013
+
+50%            1                      Mean           .5118365
+                        Largest       Std. dev.      .4999222
+75%            1              1
+90%            1              1       Variance       .2499222
+95%            1              1       Skewness      -.0473594
+99%            1              1       Kurtosis       1.002243
+
+         Age of the head of the household (in years)
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%           21             16
+ 5%           25             16
+10%           28             17       Obs               4,013
+25%           35             17       Sum of wgt.       4,013
+
+50%           45                      Mean           46.69624
+                        Largest       Std. dev.      15.09342
+75%           57             87
+90%           68             87       Variance       227.8112
+95%           73             88       Skewness       .3416082
+99%           81             88       Kurtosis       2.313897
+
+                Age of the spouse (in years)
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%           18             15
+ 5%           22             15
+10%           25             16       Obs               4,013
+25%           31             16       Sum of wgt.       4,013
+
+50%           41                      Mean           40.42911
+                        Largest       Std. dev.      12.44865
+75%           48             82
+90%           58             83       Variance       154.9689
+95%           64             86       Skewness       .5214882
+99%           73             87       Kurtosis       3.010683
+
+        Education of the head of household (completed
+                     years of schooling)
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%            0              0
+ 5%            0              0
+10%            0              0       Obs               4,013
+25%            0              0       Sum of wgt.       4,013
+
+50%            2                      Mean            2.76151
+                        Largest       Std. dev.      2.687459
+75%            4             16
+90%            6             16       Variance       7.222435
+95%            8             16       Skewness       1.102903
+99%            9             16       Kurtosis       4.574127
+
+         Education of the spouse (completed years of
+                         schooling)
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%            0              0
+ 5%            0              0
+10%            0              0       Obs               4,013
+25%            0              0       Sum of wgt.       4,013
+
+50%            2                      Mean           2.638301
+                        Largest       Std. dev.       2.55945
+75%            4             16
+90%            6             16       Variance       6.550783
+95%            7             16       Skewness       1.083631
+99%            9             16       Kurtosis       4.329145
+
+       Head of the household is a woman (0=no, 1=yes)
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%            0              0
+ 5%            0              0
+10%            0              0       Obs               4,013
+25%            0              0       Sum of wgt.       4,013
+
+50%            0                      Mean           .1064042
+                        Largest       Std. dev.      .3083927
+75%            0              1
+90%            1              1       Variance        .095106
+95%            1              1       Skewness       2.552881
+99%            1              1       Kurtosis       7.517201
+
+           Number of household members (baseline)
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%            1              1
+ 5%            2              1
+10%            2              1       Obs               4,013
+25%            4              1       Sum of wgt.       4,013
+
+50%            5                      Mean           5.184899
+                        Largest       Std. dev.      2.206715
+75%            7             12
+90%            8             12       Variance       4.869592
+95%            9             12       Skewness       .1912836
+99%           10             12       Kurtosis       2.478909
+
+       Home has a dirt floor at baseline (0=no, 1=yes)
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%            0              0
+ 5%            0              0
+10%            0              0       Obs               4,013
+25%            0              0       Sum of wgt.       4,013
+
+50%            1                      Mean           .5975579
+                        Largest       Std. dev.      .4904512
+75%            1              1
+90%            1              1       Variance       .2405424
+95%            1              1       Skewness      -.3978789
+99%            1              1       Kurtosis       1.158308
+
+        Home with private bathroom at baseline (0=no,
+                           1=yes)
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%            0              0
+ 5%            0              0
+10%            0              0       Obs               4,013
+25%            0              0       Sum of wgt.       4,013
+
+50%            1                      Mean           .6122602
+                        Largest       Std. dev.      .4872954
+75%            1              1
+90%            1              1       Variance       .2374568
+95%            1              1       Skewness      -.4608052
+99%            1              1       Kurtosis       1.212341
+
+      Number of hectares of land owned by household at
+                          baseline
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%            0              0
+ 5%            0              0
+10%            0              0       Obs               4,013
+25%            0              0       Sum of wgt.       4,013
+
+50%            1                      Mean           2.087217
+                        Largest       Std. dev.      3.163124
+75%            3             22
+90%            6             22       Variance       10.00535
+95%            8             23       Skewness       2.822352
+99%           16             23       Kurtosis       13.15545
+
+. 
+. *what is the unit of analysis of the dataset? (in other words, does each observation correspond to a vi
+> llage, or household, or individual? Use household_identifier, locality_identifier, treat_village and ti
+> me2018 to answer this. Use the browse command)
+. isid household_identifier time2018
+
+. 
+. *In 2015, is income per capita the same in the treatment and control groups on average? (hint: use t-te
+> sts or regressions) do you think it is/is not a problem?
+. ttest income, by(treat_village)
+
+Two-sample t test with equal variances
+------------------------------------------------------------------------------
+   Group |     Obs        Mean    Std. err.   Std. dev.   [95% conf. interval]
+---------+--------------------------------------------------------------------
+       0 |   2,064    11556.07    22.26319    1011.445    11512.41    11599.73
+       1 |   1,949    12288.55    19.66027    867.9515       12250    12327.11
+---------+--------------------------------------------------------------------
+Combined |   4,013    11911.82    15.98872    1012.857    11880.47    11943.16
+---------+--------------------------------------------------------------------
+    diff |           -732.4814    29.83098               -790.9667   -673.9961
+------------------------------------------------------------------------------
+    diff = mean(0) - mean(1)                                      t = -24.5544
+H0: diff = 0                                     Degrees of freedom =     4011
+
+    Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = 0.0000         Pr(|T| > |t|) = 0.0000          Pr(T > t) = 1.0000
+
+. 
+. *list down the variables in the dataset, that would not be affected by the policy change (or, in other 
+> words, list down variables that are exogenous to the experimental intervention)
+. // age* educ* female* hhsize dirtfloor bathroom land
+. 
+. *How similar are the treatment and control groups pre-treatment? (hint: use t-tests and observable char
+> acteristics)
+. *How similar are the treatment and control groups post-treatment? (hint: use t-tests and observable cha
+> racteristics)
+. *Having seen the output so far, looking at the output you've gotten so far, what can you say about the 
+> parallel (or common) trends assumption? (Page 10/22 in last week's lecture notes) 
+. ttest age_hh if time2018 == 0, by(treat_village)
+
+Two-sample t test with equal variances
+------------------------------------------------------------------------------
+   Group |     Obs        Mean    Std. err.   Std. dev.   [95% conf. interval]
+---------+--------------------------------------------------------------------
+       0 |   1,017    46.40806    .4713569    15.03178    45.48312    47.33301
+       1 |     942    46.87898    .4982537    15.29241    45.90116     47.8568
+---------+--------------------------------------------------------------------
+Combined |   1,959    46.63451    .3424178    15.15562    45.96297    47.30605
+---------+--------------------------------------------------------------------
+    diff |            -.470918    .6854305               -1.815169    .8733326
+------------------------------------------------------------------------------
+    diff = mean(0) - mean(1)                                      t =  -0.6870
+H0: diff = 0                                     Degrees of freedom =     1957
+
+    Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = 0.2461         Pr(|T| > |t|) = 0.4921          Pr(T > t) = 0.7539
+
+. ttest age_hh if time2018 == 1, by(treat_village) //....etc. Do this for the other variables
+
+Two-sample t test with equal variances
+------------------------------------------------------------------------------
+   Group |     Obs        Mean    Std. err.   Std. dev.   [95% conf. interval]
+---------+--------------------------------------------------------------------
+       0 |   1,047    46.17383    .4618345    14.94376     45.2676    47.08006
+       1 |   1,007    47.35948    .4763989    15.11769    46.42463    48.29433
+---------+--------------------------------------------------------------------
+Combined |   2,054    46.75511    .3317951    15.03731    46.10442     47.4058
+---------+--------------------------------------------------------------------
+    diff |           -1.185654    .6633616               -2.486586    .1152785
+------------------------------------------------------------------------------
+    diff = mean(0) - mean(1)                                      t =  -1.7873
+H0: diff = 0                                     Degrees of freedom =     2052
+
+    Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = 0.0370         Pr(|T| > |t|) = 0.0740          Pr(T > t) = 0.9630
+
+. 
+. *run a diff-in-diff regression of the form:
+. *y = a + b1*Treated + b2*(Time dummy for year post-treatment) + b3*(Treated)*(Post-treatment dummy) + e
+> rror
+. *note the coefficients, standard errors, t values, p values and 95% confidence intervals
+. *interpret the coefficients
+. reg income i.treat_village##i.time2018 age_hh educ_hh hhsize dirtfloor bathroom land
+
+      Source |       SS           df       MS      Number of obs   =     4,013
+-------------+----------------------------------   F(9, 4003)      =    419.80
+       Model |  1.9985e+09         9   222052421   Prob > F        =    0.0000
+    Residual |  2.1174e+09     4,003  528942.643   R-squared       =    0.4856
+-------------+----------------------------------   Adj R-squared   =    0.4844
+       Total |  4.1158e+09     4,012  1025879.66   Root MSE        =    727.28
+
+----------------------------------------------------------------------------------------
+                income | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+-----------------------+----------------------------------------------------------------
+       1.treat_village |   405.9099   32.90525    12.34   0.000     341.3972    470.4225
+            1.time2018 |  -323.0062   32.05261   -10.08   0.000    -385.8471   -260.1652
+                       |
+treat_village#time2018 |
+                  1 1  |   617.4592   45.96426    13.43   0.000     527.3437    707.5747
+                       |
+                age_hh |   11.10134   .9040428    12.28   0.000     9.328912    12.87377
+               educ_hh |   6.566096   4.928576     1.33   0.183    -3.096657    16.22885
+                hhsize |  -230.7412   5.303035   -43.51   0.000    -241.1381   -220.3443
+             dirtfloor |  -369.7328   23.86504   -15.49   0.000    -416.5215    -322.944
+              bathroom |   19.97255     23.942     0.83   0.404     -26.9671     66.9122
+                  land |   19.76426   3.743837     5.28   0.000     12.42426    27.10427
+                 _cons |   12552.37   67.58544   185.73   0.000     12419.86    12684.87
+----------------------------------------------------------------------------------------
+
+. 
+. *run the same regression as above, and add the exogenous controls that you think are important. Be care
+> ful to avoid multicollinearity (if in doubt, run a regression between the variables you think are multi
+> collinear, and look at the R^2). 
+. *Compared to the previous regression, what happens to coefficients, standard errors, t-values, p values
+>  and 95% confidence intervals?
+. reg income i.treat_village##i.time2018 age_hh 
+
+      Source |       SS           df       MS      Number of obs   =     4,013
+-------------+----------------------------------   F(4, 4008)      =    280.08
+       Model |   899134315         4   224783579   Prob > F        =    0.0000
+    Residual |  3.2167e+09     4,008  802568.581   R-squared       =    0.2185
+-------------+----------------------------------   Adj R-squared   =    0.2177
+       Total |  4.1158e+09     4,012  1025879.66   Root MSE        =    895.86
+
+----------------------------------------------------------------------------------------
+                income | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+-----------------------+----------------------------------------------------------------
+       1.treat_village |   406.3544   40.51335    10.03   0.000     326.9257    485.7831
+            1.time2018 |  -335.7534    39.4429    -8.51   0.000    -413.0835   -258.4234
+                       |
+treat_village#time2018 |
+                  1 1  |   609.7909   56.61375    10.77   0.000     498.7965    720.7853
+                       |
+                age_hh |   16.97125   .9375054    18.10   0.000     15.13322    18.80928
+                 _cons |    10940.8   51.78883   211.26   0.000     10839.27    11042.34
+----------------------------------------------------------------------------------------
+
+. 
+. *run the following commands. Locate where the DiD estimate is on the graph. Compare it to your regressi
+> on results. Go to your lecture notes, page 15/22, and compare your graph with the figure from your lect
+> ure notes
+. reg income i.treat_village##i.time2018 
+
+      Source |       SS           df       MS      Number of obs   =     4,013
+-------------+----------------------------------   F(3, 4009)      =    244.30
+       Model |   636130335         3   212043445   Prob > F        =    0.0000
+    Residual |  3.4797e+09     4,009  867971.776   R-squared       =    0.1546
+-------------+----------------------------------   Adj R-squared   =    0.1539
+       Total |  4.1158e+09     4,012  1025879.66   Root MSE        =    931.65
+
+----------------------------------------------------------------------------------------
+                income | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+-----------------------+----------------------------------------------------------------
+       1.treat_village |   414.3464   42.12929     9.84   0.000     331.7496    496.9433
+            1.time2018 |  -339.7287   41.01794    -8.28   0.000    -420.1466   -259.3107
+                       |
+treat_village#time2018 |
+                  1 1  |   621.9208   58.87124    10.56   0.000     506.5005    737.3412
+                       |
+                 _cons |   11728.41   29.21409   401.46   0.000     11671.13    11785.68
+----------------------------------------------------------------------------------------
+
+. margins i.treat_village#i.time2018
+
+Adjusted predictions                                     Number of obs = 4,013
+Model VCE: OLS
+
+Expression: Linear prediction, predict()
+
+----------------------------------------------------------------------------------------
+                       |            Delta-method
+                       |     Margin   std. err.      t    P>|t|     [95% conf. interval]
+-----------------------+----------------------------------------------------------------
+treat_village#time2018 |
+                  0 0  |   11728.41   29.21409   401.46   0.000     11671.13    11785.68
+                  0 1  |   11388.68   28.79251   395.54   0.000     11332.23    11445.13
+                  1 0  |   12142.75    30.3548   400.03   0.000     12083.24    12202.26
+                  1 1  |   12424.94   29.35878   423.21   0.000     12367.38     12482.5
+----------------------------------------------------------------------------------------
+
+. predict untreated if treat_village == 0
+(option xb assumed; fitted values)
+(1,949 missing values generated)
+
+. replace untreated = untreated + _b[1.treat_village]
+(2,064 real changes made)
+
+. marginsplot, xdimension(time2018) addplot(line untreated time2018)
+
+Variables that uniquely identify margins: treat_village time2018
+
+. 
+. 
+. *close log file
+. log close
+      name:  <unnamed>
+       log:  C:\Users\u1972955\Dropbox\TA\EC203\Term 2\ec203-seminars\class15\ps15.log
+  log type:  text
+ closed on:   4 Mar 2023, 12:02:05
+---------------------------------------------------------------------------------------------------------
